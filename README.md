@@ -4,6 +4,7 @@ Overview
 The Healthcare App is designed to facilitate seamless appointment booking with doctors, provide real-time health news updates, and help users navigate to healthcare facilities using Google Maps. The app ensures a user-friendly experience with an aesthetically pleasing UI and intuitive navigation.
 
 Features
+
 🔒 User Authentication: Secure login and registration system.
 📅 Appointment Booking: Users can book, view, and manage their appointments with doctors.
 📰 Real-time Health News: Integration with News API to provide the latest health-related news.
@@ -12,9 +13,11 @@ Features
 🌟 User-friendly Interface: Designed with a focus on usability and aesthetics.
 
 Installation
+
 To run this application locally, follow these steps:
 
 Clone the repository:
+
 git clone https://github.com/Philani56/Health
 
 Set up the Android application:
