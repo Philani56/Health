@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "639181617603",
+    "project_id": "healthcareapp-2d88b",
+    "storage_bucket": "healthcareapp-2d88b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639181617603:android:32117acf11ccfff25d6576",
+        "android_client_info": {
+          "package_name": "com.ahmedapps.geminichatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPidZ_-lIan_Tej8HT_20VVkoa2Efu_Hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

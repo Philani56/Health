@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gemini Chat Bot</string>
+
+    <string name="select_doctor_prompt">Select Doctor</string>
+
+    <!-- Define doctor names -->
+    <string-array name="doctor_names">
+        <item>Select Doctor</item>
+        <item>Dr. John Doe</item>
+        <item>Dr. Jane Smith</item>
+        <item>Dr. Michael Brown</item>
+        <!-- Add more doctors as needed -->
+    </string-array>
+
+    <string name="api_key">NEWS_API_KEY</string>
+
+</resources>

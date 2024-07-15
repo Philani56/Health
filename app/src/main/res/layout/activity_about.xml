@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/health_icon"
+                android:tint="@color/my_primary"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About HealthCare"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_primary"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HealthCare is dedicated to providing top-notch medical services to our community. We leverage technology to offer the best care and improve patient outcomes."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/my_secondary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_secondary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/missionTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_primary"
+                android:paddingTop="24dp"/>
+
+            <TextView
+                android:id="@+id/missionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our mission is to deliver compassionate and personalized healthcare through innovative practices and continuous improvement."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/my_secondary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_secondary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/visionTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_primary"
+                android:paddingTop="24dp"/>
+
+            <TextView
+                android:id="@+id/visionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our vision is to be the leading healthcare provider, recognized for excellence in patient care, research, and education."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/my_secondary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_secondary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/contactButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:onClick="onClickHome"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

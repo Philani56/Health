@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Arrow -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/back"
+        android:onClick="onClickBtn"
+        android:contentDescription="Back Arrow"
+        android:padding="8dp" />
+
+    <!-- Professional Picture and Prompt Container -->
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Professional Picture -->
+        <ImageView
+            android:id="@+id/iv_professional"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/doctors"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Prompt TextView -->
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_professional"
+            android:layout_marginTop="16dp"
+            android:text="Enter the doctor's name to view all appointments"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="24dp"
+        android:hint="Enter doctor's name"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <!-- Button to view appointments -->
+    <Button
+        android:id="@+id/btn_view_appointments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="24dp"
+        android:text="View Appointments"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="16sp"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp" />
+
+    <!-- CardView for the appointment details -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_view_appointments"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Doctor's Name -->
+            <TextView
+                android:id="@+id/tvDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor: Dr. John Doe"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Patient's Name -->
+            <TextView
+                android:id="@+id/tvPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Patient: Nhlakanipho Khumalo"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <!-- Appointment Date -->
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Date: 11/7/2024"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <!-- Appointment Time -->
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Time: 06:00"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <!-- Patient's Email -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email: khumalophilani580@gmail.com"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
