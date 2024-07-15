@@ -1,4 +1,5 @@
 🏥 Healthcare App
+
 Overview
 The Healthcare App is designed to facilitate seamless appointment booking with doctors, provide real-time health news updates, and help users navigate to healthcare facilities using Google Maps. The app ensures a user-friendly experience with an aesthetically pleasing UI and intuitive navigation.
 
@@ -9,6 +10,7 @@ Features
 🗺️ Location Services: Integration with Google Maps to show the user's current location and navigate to nearby healthcare facilities.
 💬 Chatbot Support: Integration with Chatbot Gemini API for user support and assistance.
 🌟 User-friendly Interface: Designed with a focus on usability and aesthetics.
+
 Installation
 To run this application locally, follow these steps:
 
